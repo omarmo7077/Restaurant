@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Login.css">
+    <title>Login Page</title>
+</head>
+
+<body>
+
+    <div id="div1" class="login-box">
+        <div class="login-header">
+            <header>Super Admin Login</header>
+        </div>
+        <div class="input-box">
+            <input type="text" id="myInput" class="input-field" placeholder="Email" required>
+        </div>
+        <div class="input-box">
+            <input type="text" id="myInput2" class="input-field" placeholder="Password" required>
+        </div>
+        <div class="forgot">
+            <section>
+                <input type="checkbox" id="check">
+                <label for="check">Remember me</label>
+            </section>
+            <section>
+                <a onclick="Forget()" href="#">Forgot password</a>
+            </section>
+        </div>
+        <div class="input-submit">
+            <button onclick="getData()" class="submit-btn">Sign In</button>
+
+        </div>
+
+    </div>
+
+
+    <div id="div2" style="display: none;" class="login-box">
+        <div class="login-header">
+            <header>Forgot password</header>
+        </div>
+        <div class="input-box">
+            <input type="email" id="myInput" class="input-field" placeholder="Enter you Email" required>
+        </div>
+
+
+        <div class="input-submit">
+            <button onclick="EnterCode()" class="submit-btn">Send Code</button>
+        </div>
+
+        <div style="display: none;margin-top: 15px;" id="Code" class="input-box">
+            <input type="email" id="myInput" class="input-field" placeholder="Enter Code Here!" required>
+        </div>
+
+        <section class="section-center">
+            <a onclick="Return()" href="#">Return</a>
+        </section>
+
+
+
+
+    </div>
+    </div>
+
+
+
+
+    <script src="js/Login.js"></script>
+
+
+
+</body>
+
+</html>
